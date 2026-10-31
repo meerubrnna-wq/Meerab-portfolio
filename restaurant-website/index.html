@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meerab Rnna — aspiring web developer learning HTML, CSS and JavaScript.">
+  <title>Meerab Rnna | Aspiring Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Meerab Rnna home">MEERAB <span>RNNA.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> ASPIRING WEB DEVELOPER</p>
+        <h1>Turning ideas<br>into <span>web experiences.</span></h1>
+        <p class="intro">Hi, I'm Meerab. I'm building my skills in web development one project at a time, and I love bringing creative ideas to life through code.</p>
+        <div class="hero-actions">
+          <a class="button" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="Meerab_Rnna_CV.pdf" target="_blank" rel="noopener">View my CV</a>
+        </div>
+        <p class="hero-note">Currently learning HTML · CSS · JavaScript</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="code-card"><span class="dots">● ● ●</span><p><span class="code-pink">const</span> goal = <span class="code-yellow">"Web Developer"</span>;</p><p><span class="code-pink">while</span> (learning) {</p><p class="indent">buildProjects();</p><p class="indent">improveSkills();</p><p>}</p><span class="cursor"></span></div>
+        <span class="art-star star-one">✳</span><span class="art-star star-two">✦</span>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-label">01 / ABOUT ME</div>
+      <div class="about-content">
+        <p class="eyebrow">A LITTLE INTRODUCTION</p>
+        <h2>Creative thinking.<br><span>Technical curiosity.</span></h2>
+        <p class="body-copy">I'm an IT student with a strong interest in web development. My main goal is to become a skilled web developer, and I'm working towards it by learning the fundamentals and creating practical projects. I have built a foundation in HTML and CSS, and I'm currently learning JavaScript to make websites more interactive. I also enjoy graphic design, which helps me think about colours, layouts and the overall user experience. I'm curious, consistent and always ready to learn something new.</p>
+        <p class="about-goal">My long-term goal is to grow as a developer and pursue an Ausbildung in Germany as a Fachinformatikerin für Anwendungsentwicklung.</p>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-label">02 / SKILLS</div>
+      <div class="section-main">
+        <p class="eyebrow">MY LEARNING JOURNEY</p>
+        <h2>Building my skills,<br><span>step by step.</span></h2>
+        <div class="skill-grid">
+          <article class="skill-card"><span class="skill-number">01</span><h3>HTML</h3><p>Creating structured web pages with semantic elements, links, images and forms.</p><span class="skill-level">Learning foundation</span></article>
+          <article class="skill-card"><span class="skill-number">02</span><h3>CSS</h3><p>Styling pages with colours, typography, spacing, Flexbox and responsive layouts.</p><span class="skill-level">Learning foundation</span></article>
+          <article class="skill-card featured-skill"><span class="skill-number">03</span><h3>JavaScript</h3><p>Currently learning programming fundamentals to bring interaction and functionality to websites.</p><span class="skill-level">Currently learning</span></article>
+        </div>
+        <div class="design-note"><span class="design-icon">✳</span><p><strong>Also interested in:</strong> Graphic design, branding, Adobe Illustrator, Adobe Photoshop and Canva.</p></div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-label">03 / SELECTED WORK</div>
+      <div class="section-main">
+        <p class="eyebrow">LEARNING BY BUILDING</p>
+        <h2>Explore my <span>projects.</span></h2>
+        <p class="section-intro">These beginner projects help me practise page structure, styling and responsive design. Select a project to open the website.</p>
+        <div class="project-grid">
+          <a class="project-card project-olive" href="../02-restaurant-website/index.html" target="_blank" rel="noopener">
+            <div class="project-visual olive-visual"><span class="visual-kicker">OLIVE & OAK</span><span class="visual-title">Fresh food.<br>Good company.</span><span class="visual-leaf">✳</span></div>
+            <div class="project-info"><div><span class="project-type">WEB DEVELOPMENT · 01</span><h3>Restaurant Website</h3></div><span class="project-arrow">↗</span></div>
+            <p>A responsive website concept for a fictional neighbourhood restaurant.</p><div class="tech-tags"><span>HTML</span><span>CSS</span></div>
+            <span class="view-link">View project <span>↗</span></span>
+          </a>
+          <a class="project-card project-fizuno" href="../03-product-landing-page/index.html" target="_blank" rel="noopener">
+            <div class="project-visual fizuno-visual"><span class="visual-kicker">A FICTIONAL DRINK BRAND</span><span class="fizuno-word">FIZUNO<span>®</span></span><span class="fizuno-sub">CITRUS SPARK</span><span class="fizuno-circle"></span></div>
+            <div class="project-info"><div><span class="project-type">WEB DEVELOPMENT · 02</span><h3>FIZUNO Landing Page</h3></div><span class="project-arrow">↗</span></div>
+            <p>A bright product landing page for my original fictional drink brand.</p><div class="tech-tags"><span>HTML</span><span>CSS</span></div>
+            <span class="view-link">View project <span>↗</span></span>
+          </a>
+        </div>
+        <div class="creative-work"><span class="creative-icon">✳</span><div><strong>Creative work beyond code</strong><p>I've also explored visual identity and graphic design through logo and branding concepts, including Red Bull, Subway, perfume and coffee brand ideas.</p></div></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-inner"><p class="eyebrow">04 / CONTACT</p><h2>Let's create<br><span>something meaningful.</span></h2><p>I'm always interested in learning, building and connecting with people who share a passion for technology.</p><a class="button button-light" href="mailto:Meerubrnna@gmail.com">Get in touch <span>↗</span></a></div>
+      <div class="contact-decoration">M<span>.</span></div>
+    </section>
+  </main>
+  <footer><span>© 2026 Meerab Rnna</span><span>Designed & built with curiosity.</span></footer>
+</body>
+</html>
