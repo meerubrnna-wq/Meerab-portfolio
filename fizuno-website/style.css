@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+:root { --ink: #20251c; --green: #315b35; --lime: #d9f05a; --yellow: #f7c948; --cream: #fbf8ed; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--cream); font-family: 'DM Sans', sans-serif; line-height: 1.6; }
+.header { display: flex; align-items: center; justify-content: space-between; padding: 22px 8%; }
+.logo { color: var(--green); text-decoration: none; font: 800 1.55rem 'Manrope', sans-serif; letter-spacing: -.06em; }
+.logo span { font-size: .65rem; vertical-align: top; }
+nav { display: flex; gap: 28px; }
+nav a { color: var(--ink); text-decoration: none; font-size: .92rem; }
+nav a:hover { color: var(--green); }
+.hero { min-height: 600px; display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 35px; padding: 75px 10%; overflow: hidden; background: var(--lime); }
+.eyebrow { color: var(--green); font-size: .75rem; font-weight: 800; letter-spacing: .16em; }
+h1, h2, h3 { font-family: 'Manrope', sans-serif; line-height: 1.1; }
+h1 { margin: 16px 0; font-size: clamp(3.4rem, 7vw, 6.4rem); letter-spacing: -.07em; }
+.hero-copy > p:not(.eyebrow) { max-width: 500px; color: #48543b; font-size: 1.05rem; }
+.button { display: inline-block; margin-top: 22px; padding: 13px 22px; border-radius: 30px; background: var(--green); color: white; text-decoration: none; font-weight: 700; }
+.button:hover { background: #203e25; }
+.can-wrap { min-height: 390px; position: relative; display: grid; place-items: center; }
+.can { position: relative; z-index: 2; width: 190px; height: 355px; border: 5px solid rgba(255,255,255,.55); border-radius: 35px 35px 27px 27px; display: flex; flex-direction: column; align-items: center; justify-content: space-around; padding: 25px 12px; transform: rotate(8deg); color: var(--green); background: linear-gradient(100deg, #f6bd32, #ffe77a 48%, #e9a91e); box-shadow: 25px 28px 45px rgba(53,72,25,.2), inset 8px 0 12px rgba(255,255,255,.35); }
+.can:before { content: ''; position: absolute; top: -10px; left: 22px; right: 22px; height: 12px; border-radius: 50%; background: #d6d6c7; border: 2px solid white; }
+.can-brand { font: 800 1.8rem 'Manrope', sans-serif; letter-spacing: -.08em; }
+.can-flavour { text-align: center; font: 800 1.7rem 'Manrope', sans-serif; line-height: 1; }
+.can-bottom { font-size: .58rem; font-weight: 700; letter-spacing: .1em; }
+.bubble { position: absolute; border: 2px solid rgba(49,91,53,.3); border-radius: 50%; }
+.bubble-one { width: 75px; height: 75px; top: 30px; right: 15px; }
+.bubble-two { width: 35px; height: 35px; bottom: 45px; left: 25px; }
+.bubble-three { width: 18px; height: 18px; top: 85px; left: 25px; }
+.section { padding: 85px 10%; }
+.section h2 { margin: 12px 0 20px; font-size: clamp(2.1rem, 4vw, 3.5rem); letter-spacing: -.05em; }
+.story > p:last-child { max-width: 700px; color: #66705d; }
+.flavours { background: #fff3e8; }
+.flavours-intro { color: #66705d; }
+.drink-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px; }
+.drink-card { overflow: hidden; border-radius: 16px; background: #fff; box-shadow: 0 12px 30px rgba(53,72,25,.10); }
+.drink-card img { display: block; width: 100%; height: 220px; object-fit: cover; }
+.drink-card div { padding: 20px; }
+.drink-card span { color: #8c9c37; font-size: .7rem; font-weight: 800; letter-spacing: .13em; }
+.drink-card h3 { margin: 8px 0; }
+.drink-card p { margin: 0; color: #66705d; font-size: .92rem; }
+.flavour-note { margin-top: 20px; color: #777; font-size: .82rem; }
+.features { background: #f0eddf; }
+.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 35px; }
+.feature-grid article { padding: 25px; border: 1px solid #dedbc9; border-radius: 12px; background: var(--cream); }
+.feature-grid span { color: #8c9c37; font-weight: 800; }
+.feature-grid h3 { margin: 18px 0 8px; }
+.feature-grid p { color: #66705d; font-size: .94rem; }
+.contact { text-align: center; background: var(--green); color: white; }
+.contact .eyebrow { color: var(--lime); }
+.contact h2 { color: white; }
+.contact > p:not(.eyebrow) { color: #e1e9dc; }
+.button-dark { color: var(--green); background: var(--lime); }
+footer { padding: 24px 8%; background: #1d3821; color: #e1e9dc; text-align: center; font-size: .85rem; }
+@media (max-width: 760px) {
+  .header { flex-direction: column; gap: 15px; }
+  nav { gap: 17px; flex-wrap: wrap; justify-content: center; }
+  .hero { grid-template-columns: 1fr; padding: 65px 7%; }
+  .can-wrap { min-height: 340px; }
+  .can { transform: scale(.88) rotate(8deg); }
+  .section { padding: 65px 7%; }
+  .feature-grid, .drink-grid { grid-template-columns: 1fr; }
+}
